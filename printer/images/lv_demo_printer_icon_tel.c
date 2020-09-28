@@ -1,4 +1,8 @@
-#include "../../../lv_examples.h"
+#include "../../lvgl/lvgl.h"
+#include "../../lv_conf.h"
+
+#include "../demo_printer.h"
+
 #if LV_USE_DEMO_PRINTER
 
 #ifndef LV_ATTRIBUTE_MEM_ALIGN

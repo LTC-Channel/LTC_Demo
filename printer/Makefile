@@ -19,9 +19,15 @@ VPATH =
 $(info LDFLAGS ="$(LDFLAGS)")
 
 LVGL_DIR = ../lvgl
+INPUT_DRIVER_DIR = ../input_driver
+DISPLAY_DRIVER_DIR = ../display_driver
+IMAGE_DIR = ./images
 
 include $(LVGL_DIR)/lvgl.mk
-include $(LVGL_DIR)/../display_driver/lv_drivers.mk
+include $(DISPLAY_DRIVER_DIR)/display.mk
+include $(INPUT_DRIVER_DIR)/indev.mk
+include $(IMAGE_DIR)/lv_demo_printer.mk
+
 #include $(LVGL_DIR)/lv_examples/lv_examples.mk # check lai cai nay sau
 
 # folder for object files

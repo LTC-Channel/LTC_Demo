@@ -6,7 +6,7 @@
 /*********************
  *      INCLUDES
  *********************/
-#include "lv_demo_printer.h"
+#include "demo_printer.h"
 #include "lv_demo_printer_theme.h"
 
 #if LV_USE_DEMO_PRINTER
@@ -468,7 +468,7 @@ static void theme_apply(lv_obj_t * obj, lv_theme_style_t name)
     }
 
 
-    lv_obj_refresh_style(obj, LV_STYLE_PROP_ALL);
+    lv_obj_refresh_style(obj, 1, LV_STYLE_PROP_ALL); // thu de part = 1 xem sao
 
 
 }

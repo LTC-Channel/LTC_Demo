@@ -13,7 +13,7 @@ extern "C" {
 /*********************
  *      INCLUDES
  *********************/
-#include "lv_demo_printer.h"
+#include "demo_printer.h"
 
 #if LV_USE_DEMO_PRINTER
 /*********************
